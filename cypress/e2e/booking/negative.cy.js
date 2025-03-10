@@ -39,7 +39,7 @@ describe('Negative', ()=>{
 
     it('Update non existing booking', function () {
         cy.logInReq(credentials, false)
-        .then((authToken) => {
+        .then(() => {
             let reqType = 'json'
             let resType = 'json'
             let body = this.bookingJSON
@@ -50,7 +50,7 @@ describe('Negative', ()=>{
 
     it('Delete non existing booking', function () {
         cy.logInReq(credentials, false)
-        .then((authToken) => {
+        .then(() => {
             let bookingId = 124236567658778
             cy.deleteBooking(bookingId, 405)
         })

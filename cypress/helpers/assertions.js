@@ -244,7 +244,7 @@ export async function assertNewBookingResponseXML(response, bookingDetails){
             expect(result["created-booking"].booking).to.have.property('totalprice')
             expect(result["created-booking"].booking.totalprice).to.eq(expected.booking.totalprice)
             expect(result["created-booking"].booking).to.have.property('depositpaid')
-            //expect(result["created-booking"].booking.depositpaid).to.eq(expected.booking.depositpaid)
+            expect(result["created-booking"].booking.depositpaid).to.eq(expected.booking.depositpaid)
             expect(result["created-booking"].booking.bookingdates).to.have.property('checkin')
             expect(result["created-booking"].booking.bookingdates.checkin).to.eq(expected.booking.bookingdates.checkin)
             expect(result["created-booking"].booking.bookingdates).to.have.property('checkout')
