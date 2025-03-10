@@ -1,0 +1,1 @@
+firstname=Predrag&lastname=Svrzic&totalprice=122&depositpaid=true&bookingdates[checkin]=2025-01-01&bookingdates[checkout]=2025-01-02
